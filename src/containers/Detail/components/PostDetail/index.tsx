@@ -4,7 +4,7 @@ import { TPost } from "@/src/types"
 import React from "react"
 import PostHeader from "./PostHeader"
 import Footer from "./PostFooter"
-import CommentBox from "./CommentBox"
+// import CommentBox from "./CommentBox"
 import Category from "@components/Category"
 import Image from "next/image"
 import Link from "next/link"
@@ -78,7 +78,7 @@ const PostDetail: React.FC<Props> = ({ blockMap, data }) => {
         {data.type[0] === "Post" && (
           <>
             <Footer />
-            <CommentBox data={data} />
+            {/*<CommentBox data={data} />*/}
           </>
         )}
       </article>
